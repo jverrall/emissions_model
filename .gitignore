@@ -1,3 +1,10 @@
+# Data files
+*.csv
+*.ftr
+*.xlsx
+*.xls
+credentials.yml
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
