@@ -5,6 +5,11 @@
 *.xls
 credentials.yml
 
+# SDKs
+.vscode-test
+__pycache__
+.ipynb_checkpoints
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
