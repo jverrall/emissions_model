@@ -40,7 +40,7 @@ params_d = fn_GetDefaultParams()
 
 # get readme text for the bottom of the page
 @st.cache_data
-def fn_GetReadMeText(readme_filename: str = 'readme.md') -> str:
+def fn_GetReadMeText(readme_filename: str = 'README.md') -> str:
     return utils.fn_LoadFile(readme_filename)
 
 readme_text = fn_GetReadMeText()
