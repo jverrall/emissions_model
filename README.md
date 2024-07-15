@@ -16,4 +16,4 @@ If running from your own computer:
 3. Click the **Download** button to export the main settings and emissions
 
 ## License
-MIT
+GPL
