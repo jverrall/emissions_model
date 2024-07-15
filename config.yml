@@ -1,0 +1,141 @@
+AeroplaneConvFactor: 0.16099
+BicycleConvFactor: 0
+BusConvFactor: 0.05323
+CarDieselConvFactor: 0.11415
+CarElectricConvFactor: 0
+CarHybridConvFactor: 0.05848
+CarPetrolConvFactor: 0.12586
+DefaultAbsencePerYear: 0
+DefaultHolidaysPerYear: 30
+DefaultMaxStaffDistance: 100
+DefaultStaffNum: 550
+ElectricConvFactor: 0.20705
+England_PetrolRatio: 0.640249
+HeatAllowance: 5.076923076923077
+HeatConvFactor: 0.20264
+ItOptions:
+  desktop + monitor: 0.021538461538461538
+  laptop: 0.0062637362637362635
+  mobile phone: 4
+LightAllowance: 0.01
+LondonBusConvFactor: 0.07832
+MaxHoursPerWeek: 35
+MaxStaffNum: 1000
+MaxVisitsPerMonth: 20
+MaxWorkDaysPerMonth: 21.666666666666668
+MaxWorkDaysPerWeek: 5
+MaxWorkDaysPerYear: 260
+MinHoursPerWeek: 10
+MinStaffNum: 50
+MotorbikeConvFactor: 0.11368
+North East_PetrolRatio: 0.589027
+North West_PetrolRatio: 0.618502
+Northern Ireland_PetrolRatio: 0.411009
+PublicHolsPerYear: 8
+Scotland_PetrolRatio: 0.625763
+ScreenOptions:
+  1 extra monitor: 0.002197802197802198
+  2 extra monitors: 0.004395604395604396
+  3 extra monitors: 0.006593406593406593
+SessionDefaults:
+  sessionDistanceTotal: 0
+  sessionEmissionsHeat: 0
+  sessionEmissionsIt: 0
+  sessionEmissionsLight: 0
+  sessionEmissionsTotal: 0
+  sessionEmissionsTransport: 0
+  sessionEmissionsWfh: 0
+  sessionFteTotal: 500
+  sessionStaffTotal: 550
+  sessionWfhDays: 182
+South East_PetrolRatio: 0.668882
+South West_PetrolRatio: 0.622407
+TaxiConvFactor: 0.17632
+TrainConvFactor: 0.03461
+United Kingdom_PetrolRatio: 0.628141
+Wales_PetrolRatio: 0.570892
+WalkConvFactor: 0
+CloseList:
+- 0.05
+- 0.075
+- 0.1
+- 0.1
+- 0.1
+- 0.075
+- 0.075
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.025
+- 0.025
+- 0.025
+- 0.025
+- 0.025
+- 0.025
+- 0.025
+- 0.025
+- 0.025
+FarList:
+- 0.025
+- 0.025
+- 0.025
+- 0.025
+- 0.025
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.075
+- 0.075
+- 0.075
+- 0.075
+- 0.1
+- 0.075
+- 0.075
+- 0.025
+- 0.025
+- 0.025
+MediumList:
+- 0.025
+- 0.025
+- 0.025
+- 0.025
+- 0.05
+- 0.05
+- 0.05
+- 0.075
+- 0.075
+- 0.1
+- 0.075
+- 0.075
+- 0.075
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.025
+- 0.025
+- 0.025
+VeryCloseList:
+- 0.075
+- 0.1
+- 0.1
+- 0.1
+- 0.075
+- 0.075
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.05
+- 0.025
+- 0.025
+- 0.025
+- 0.025
+- 0.025
+- 0.025
+- 0.025
+- 0.025
+- 0.025

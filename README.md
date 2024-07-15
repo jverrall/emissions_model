@@ -1,17 +1,19 @@
-# Greenhouse Gas Emissions Model
-Modelling greenhouse gas emissions from staff commuting and home-working.
+# Indirect Emissions Modeller
+Estimate the greenhouse gas emissions from commuting and Working from Home (WFH) using a synthetic staff population. 
 
-## Under Construction
-I am working on a Streamlit app to let you play with different workplace settings, and understand how changes will affect a (synthetic) organisation.
+There are stochastic elements so the same settings are likely to produce different results, so a series of runs are recommended and taking a measure of central tendency.
 
 ## Installation
-1. (Recommended) set up a virtual Python environment, e.g. by using `conda env create --name env_ghg_model python<=3.11 numpy pandas=2.2.0 streamlit=1.36.0`
-2. Set up the SDK of your choice in the virtual Python environment created above 
-3. Clone this repo and execute `XXX.py` ....
+If running from your own computer:
+1. Set a new virtual environment, e.g. using `conda create -n emissions_modeller python=3.11 numpy pandas=2.1.4 streamlit=1.36 PyYAML plotly`
+2. Alternatively use `requirements.txt` to specify a new virtual environment.
+3. Install the SDK of your choice
+4. Clone the [repo](https://github.com/jverrall/emissions_model)
 
-## Instructions
-....
+## Running the app
+1. Open `app.py` in your SDK (VSCode is recommended by Streamlit) and run using the terminal command `streamlit run app.py` from the correct directory
+2. Play with the settings to your heart's content
+3. Click the **Download** button to export the main settings and emissions
 
-## Licence & Credits
-(C) Jason Verrall 2024 jasonverrall7@gmail.com
-Licensing TBD. No warranty offered or implied; software is run at your own risk
+## License
+MIT
