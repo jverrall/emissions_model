@@ -180,15 +180,18 @@ def fn_FormCommute():
     # distance_group_r = rng.gamma(distanceMedian, size=st.session_state.sessionStaffTotal *2)
     # distance_group_r = [s for s in distance_group_r if s >= min(sliderDistance) and s <= max(sliderDistance)]
     # distance_group = list(rng.choice(distance_group_r, size=st.session_state.sessionStaffTotal, replace=True))
-        
-    distance_group_lims = np.linspace(min(sliderDistance), max(sliderDistance) , num=20, endpoint=True)
-    distance_group = []
-    for ix, ix2 in enumerate(params_d[radioCloseFar_d[radioCloseFar]][:-2]):
-        distance_group += [distance_group_lims[ix] for y in range(int(max(sliderDistance) * ix2))]
-
-    distance_group += [distance_group_lims[-1] for y in range(st.session_state.sessionStaffTotal - len(distance_group))]
     
+    # set up the distance bins
+    distance_group_lims = np.linspace(min(sliderDistance), max(sliderDistance) , num=20, endpoint=True)
+    # allocate distances
+    distance_group = []
+    for ix, ix2 in enumerate(params_d[radioCloseFar_d[radioCloseFar]][:-1]):
+        distance_group += [distance_group_lims[ix] for y in range(int(st.session_state.sessionStaffTotal * ix2))]
+    # fill up to full staffing size
+    distance_group += [np.median(distance_group_lims) for y in range(st.session_state.sessionStaffTotal - len(distance_group))]
+    # calculate actual commute distances
     distanceCommuteRaw = [d * 2 * sliderOfficeVisits for d in  distance_group]
+    # apply cap
     distanceCommute = [d if d < maxCommuteDistance else maxCommuteDistance for d in distanceCommuteRaw ]
     newOfficeRate = np.round(sliderOfficeVisits / params_d['MaxWorkDaysPerMonth'], 4) # sessionStaffOfficeRate
     newDistanceTotal = int(sum(distanceCommute)) # sessionDistanceTotal
