@@ -387,7 +387,6 @@ if 'sessionStaffTotalHoursPerYear' not in st.session_state:
 # set up sidebar
 with st.sidebar.container(border=True):
     st.markdown("[Staffing options](#staffing-options)")
-    st.markdown("[Staff home distance options](#staff-home-distance-options)")
     st.markdown('[Commuting options](#commuting-options)')
     st.markdown('[WFH options](#wfh-options)')
     st.markdown('[ReadMe](#readme)')
